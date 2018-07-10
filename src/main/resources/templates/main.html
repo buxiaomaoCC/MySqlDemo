@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据库操作系统</title>
+    <!-- WinJS references -->
+    <link href="/WinJS/css/ui-dark.css" rel="stylesheet">
+    <script src="/WinJS/js/WinJS.js"></script>
+
+    <!-- ListViewExample references -->
+    <link href="/css/default.css" rel="stylesheet">
+    <script src="/js/default.js"></script>
+</head>
+<h1 align="center">数据库操作系统</h1>
+<style type="text/css">
+    *{margin:0;padding:0;}
+    .container{}
+    .left{width:100%;border-right:none;height:50px;float:left;margin-left: 40%}
+    .right{margin-left:300px;width:auto;}
+    div{
+        margin-top: 20px;
+    }
+</style>
+<hr width="100%" size="+3">
+
+<!--<hr style="border-left:1px solid red;height:100%;background: aqua;width: 1px">-->
+<body>
+<form accept-charset="utf-8" method="get" name="main" action="/girls">
+    <div class="left">
+        <!--<div class="left">-->
+            <div >
+                <input type="submit" name="selectAll" value="查询全部" style="width: 410px;height:50px;font-size: 15px"/>
+            </div>
+    </div>
+
+</form>
+<form accept-charset="utf-8" method="post" name="main" action="/girl">
+    <div class="left">
+        <input type="text" name="username" class="inputstyle" style="width: 305px;height: 50px;font-size: 15px" placeholder="用户姓名"/>
+        <input type="submit" name="selectOne" value="查询一条" style="width: 100px;height:50px;font-size: 15px"/>
+
+    </div>
+</form>
+<form accept-charset="utf-8" method="post" name="main" action="/updategirl">
+    <div class="left">
+        <input type="number" id="dId" name="id" class="text-input" style="width: 100px;height: 50px;font-size: 15px" placeholder="用户id">
+        <input type="text" id="dName" name="username" class="text-input" style="width: 100px;height: 50px;font-size: 15px" placeholder="用户姓名">
+        <input type="text" id="dPassword" name="password" class="text-input" style="width: 100px;height: 50px;font-size: 15px" placeholder="用户密码">
+        <input type="submit" name="modify" value="修改" style="width: 100px;height:50px;font-size: 15px">
+    </div>
+</form>
+<form accept-charset="utf-8" method="post" name="main" action="/delete">
+    <div class="left">
+        <input type="number" id="d" name="id" class="inputstyle" style="width: 300px;height: 50px;font-size: 15px" placeholder="用户id"/>
+        <input type="submit" name="delete" value="删除" style="width: 100px;height:50px;font-size: 15px">
+    </div>
+</form>
+</body>
+</html>
